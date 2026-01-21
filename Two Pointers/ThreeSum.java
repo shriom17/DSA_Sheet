@@ -5,7 +5,7 @@ class Solution {
         Arrays.sort(nums);
 
         for (int i = 0; i < n; i++) {
-
+            //duplicate skip
             if (i > 0 && nums[i] == nums[i - 1]) continue;
 
             int left = i + 1;
