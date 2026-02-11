@@ -1,5 +1,6 @@
 class Solution {
     public int missingNumber(int[] nums) {
+        //Gauss Method
         int n = nums.length;
         int sum=0;
         int cur=0;
