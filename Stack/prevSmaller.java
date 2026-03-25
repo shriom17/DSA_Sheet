@@ -1,5 +1,5 @@
 public class Solution {
-    public int[] prevSmaller(int[] A) {
+    public int[] prevSmaller(int[] A) 
         Stack<Integer> st = new Stack<>();
         int n = A.length;
         int[] result = new int[n];
