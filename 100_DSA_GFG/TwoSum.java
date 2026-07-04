@@ -1,3 +1,4 @@
+//Brute-force Solution
 class Solution {
     boolean twoSum(int arr[], int target) {
         // code here
@@ -13,5 +14,26 @@ class Solution {
             }
         }
         return false;
+    }
+}
+//Optimized 
+class Solution {
+    boolean twoSum(int arr[], int target) {
+        // code here
+       HashSet<Integer>set = new HashSet<>();
+       int need=0;
+       for(int i=0; i<arr.length; i++)
+       {
+           need = target - arr[i];
+           if(set.contains(need))
+           {
+               return true;
+           }
+           else
+           {
+               set.add(arr[i]);
+           }
+       }
+       return false;
     }
 }
