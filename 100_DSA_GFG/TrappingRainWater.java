@@ -25,6 +25,8 @@ class Solution {
       return res;
     }
 }
+
+//Optimized
 class Solution {
     public int maxWater(int arr[]) {
         // code here
