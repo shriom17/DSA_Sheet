@@ -55,6 +55,8 @@ class Solution {
       return res;
     }
 }
+
+//Two pointer method 
 class Solution {
     public int maxWater(int arr[]) {
         // code here
