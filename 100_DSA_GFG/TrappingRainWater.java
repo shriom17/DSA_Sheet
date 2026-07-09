@@ -1,3 +1,4 @@
+//Brute force Method
 class Solution {
     public int maxWater(int arr[]) {
         // code here
