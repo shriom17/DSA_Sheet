@@ -55,3 +55,32 @@ class Solution {
       return res;
     }
 }
+class Solution {
+    public int maxWater(int arr[]) {
+        // code here
+      int n = arr.length;
+      int left = 0;
+      int right = n-1;
+      int res = 0;
+      int leftmax = arr[0];
+      int rightmax = arr[n-1];
+      
+     while(left<right)
+      {
+        if(arr[left]<arr[right])
+        {
+          leftmax = Math.max(leftmax, arr[left]);
+          res = res+leftmax-arr[left];
+          left++;
+        }
+        else
+        {
+          rightmax = Math.max(rightmax, arr[right]);
+          res = res+rightmax-arr[right];
+          right--;
+        }
+      }
+     
+      return res;
+    }
+}
