@@ -28,9 +28,8 @@ class MinStack {
        return st.peek();
     }
     
-    public int getMin() {
-        int minn=Math.min(st.peek(), minSt.peek());
-        return minn;
+   public int getMin() {
+        return minSt.peek();
     }
 }
 
