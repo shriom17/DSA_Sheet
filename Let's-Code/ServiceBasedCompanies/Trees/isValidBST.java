@@ -1,4 +1,4 @@
-class Solution 
+class Solution {
     public boolean isValidBST(TreeNode root) {
         return helper(root, Long.MIN_VALUE, Long.MAX_VALUE);
     }
